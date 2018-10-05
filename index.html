@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans:300|Righteous" rel="stylesheet">
+
+    <title>Aquaponic Cycling</title>
+
+    <style>
+        body {
+            padding-top: 80px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #33595E;
+        }
+        
+        #title {
+            font-size: 32px;
+            font-family: 'Righteous', cursive;
+            color: #F4F6F1;
+            text-align: center;
+        }
+
+        input.form-control {
+            background-color: #33595E;
+            border-color: #F4F6F1;
+            color: #F4F6F1
+        }
+        
+        input.form-control:focus {
+            background-color: #F4F6F1;
+            outline: none !important;
+            box-shadow:none;
+            border-color:#99bab3;
+            border-width: 2px;
+        } 
+
+        input.form-control::placeholder {
+            color: #F4F6F1;
+        }
+
+        tbody{
+            background-color: #F4F6F1;
+        }
+
+        .thead {
+            background-color: #99bab3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="title" class="mb-5 text-center">Aquaponic Cycling</div>
+    
+        <form class="mb-4">
+            <div class="form-row">
+                <div class="col">
+                    <input type="date" class="form-control" placeholder="date">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="pH">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Ammonia">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Nitrites">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Nitrates">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-outline-secondary mb-2">Log it</button>
+                </div>
+            </div>
+        </form>
+
+        <table class="table">
+            <thead class="thead">
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">pH</th>
+                    <th scope="col">Ammonia (ppm)</th>
+                    <th scope="col">Nitrites (ppm)</th>
+                    <th scope="col">Nitrates (ppm)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">2018 - 10 - 4</th>
+                    <td>7.8</td>
+                    <td>1.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th scope="row">2018 - 10 - 3</th>
+                    <td>7.5</td>
+                    <td>2.0</td>
+                    <td>1.0</td>
+                    <td>0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+        });
+    </script>
+
+</body>
+</html>
